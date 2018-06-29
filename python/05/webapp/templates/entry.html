@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form action="/search" method="POST">
+    <p>输入文字</p>
+    <table>
+        <tr>
+            <td>
+                词句
+            </td>
+            <td>
+                <input type="text" name="phrase" width="120">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                关键字
+            </td>
+            <td>
+                <input type="text" name="letters" value="aeiou" width="120">
+            </td>
+        </tr>
+    </table>
+    <p>
+        <input type="submit" value="搜索">
+    </p>
+</form>
+
+{% endblock %}

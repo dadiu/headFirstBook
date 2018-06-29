@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+    width: 960px;
+    margin: 0 auto;
+    font: normal 18px/1.8 arial;
+    color: #333;
+    background-color: #eee;
+}
+
+table {
+    background-color: #fff;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+td {
+    padding: 5px 10px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+input[type="text"] {
+    height: 30px;
+    line-height: 30px;
+}

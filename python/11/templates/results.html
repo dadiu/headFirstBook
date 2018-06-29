@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h2>
+    {{ the_title }}
+</h2>
+<p>
+    You submitted the following data:
+</p>
+<table>
+    <tr>
+        <td>
+            Phrase :
+        </td>
+        <td>
+            {{ the_phrase }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Letters :
+        </td>
+        <td>
+            {{ the_letters }}
+        </td>
+    </tr>
+</table>
+
+<p>
+    When <strong>"{{ the_phrase }}"</strong> is search for <strong>"{{ the_letters }}"</strong>, the following results are returned:
+</p>
+<h3>
+    {{ the_results }}
+</h3>
+
+{% endblock %}

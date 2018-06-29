@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+<p>以下是你需要搜索的条件</p>
+<table>
+    <tr>
+        <td>
+            词句
+        </td>
+        <td>
+            {{ the_phrase }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            关键字
+        </td>
+        <td>
+            {{ the_letters}}
+        </td>
+    </tr>
+</table>
+<p>
+    同时出现在<strong>"{{ the_phrase }}"</strong>与<strong>"{{ the_letters }}"</strong>的词：
+</p>
+<h3>
+    {{ the_results }}
+</h3>
+{% endblock %}
